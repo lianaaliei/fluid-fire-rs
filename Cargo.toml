@@ -1,0 +1,15 @@
+[package]
+name = "fluid-fire"
+version = "0.1.0"
+edition = "2021"
+description = "Real-time 3D Stable Fluids fire and smoke on the GPU (Rust + wgpu)"
+
+[dependencies]
+wgpu = "0.19"
+winit = "0.29"
+pollster = "0.3"
+bytemuck = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
